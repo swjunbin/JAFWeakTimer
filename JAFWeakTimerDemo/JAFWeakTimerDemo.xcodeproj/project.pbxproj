@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9F28829228D46E10022554B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F28828228D46E10022554B /* AppDelegate.m */; };
+		D9F2882F228D46E10022554B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F2882D228D46E10022554B /* Main.storyboard */; };
+		D9F28831228D46E20022554B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F28830228D46E20022554B /* Assets.xcassets */; };
+		D9F28834228D46E20022554B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F28832228D46E20022554B /* LaunchScreen.storyboard */; };
+		D9F28837228D46E20022554B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F28836228D46E20022554B /* main.m */; };
+		D9F28841228D46E20022554B /* JAFWeakTimerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F28840228D46E20022554B /* JAFWeakTimerDemoTests.m */; };
+		D9F28851228D47A80022554B /* JAFFirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F28850228D47A80022554B /* JAFFirstController.m */; };
+		D9F28854228D47B50022554B /* JAFSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F28853228D47B50022554B /* JAFSecondController.m */; };
+		D9F28858228D48AC0022554B /* JAFWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F28856228D48AC0022554B /* JAFWeakTimer.m */; };
+		D9F2885A228D49CE0022554B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F28859228D49CE0022554B /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9F2883D228D46E20022554B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F2881C228D46E10022554B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F28823228D46E10022554B;
+			remoteInfo = JAFWeakTimerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9F28824228D46E10022554B /* JAFWeakTimerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAFWeakTimerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F28827228D46E10022554B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9F28828228D46E10022554B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9F2882E228D46E10022554B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9F28830228D46E20022554B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9F28833228D46E20022554B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9F28835228D46E20022554B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F28836228D46E20022554B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9F2883C228D46E20022554B /* JAFWeakTimerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAFWeakTimerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F28840228D46E20022554B /* JAFWeakTimerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAFWeakTimerDemoTests.m; sourceTree = "<group>"; };
+		D9F28842228D46E20022554B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F2884F228D47A80022554B /* JAFFirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAFFirstController.h; sourceTree = "<group>"; };
+		D9F28850228D47A80022554B /* JAFFirstController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAFFirstController.m; sourceTree = "<group>"; };
+		D9F28852228D47B50022554B /* JAFSecondController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAFSecondController.h; sourceTree = "<group>"; };
+		D9F28853228D47B50022554B /* JAFSecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAFSecondController.m; sourceTree = "<group>"; };
+		D9F28856228D48AC0022554B /* JAFWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAFWeakTimer.m; sourceTree = "<group>"; };
+		D9F28857228D48AC0022554B /* JAFWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAFWeakTimer.h; sourceTree = "<group>"; };
+		D9F28859228D49CE0022554B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9F28821228D46E10022554B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F28839228D46E20022554B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9F2881B228D46E10022554B = {
+			isa = PBXGroup;
+			children = (
+				D9F28859228D49CE0022554B /* Default-568h@2x.png */,
+				D9F28826228D46E10022554B /* JAFWeakTimerDemo */,
+				D9F2883F228D46E20022554B /* JAFWeakTimerDemoTests */,
+				D9F28825228D46E10022554B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9F28825228D46E10022554B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9F28824228D46E10022554B /* JAFWeakTimerDemo.app */,
+				D9F2883C228D46E20022554B /* JAFWeakTimerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9F28826228D46E10022554B /* JAFWeakTimerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D9F28835228D46E20022554B /* Info.plist */,
+				D9F28855228D489F0022554B /* JAFWeakTimer */,
+				D9F2884E228D47710022554B /* Project */,
+				D9F2884D228D47290022554B /* Support */,
+				D9F2884C228D47130022554B /* Storyboard */,
+				D9F2884B228D470B0022554B /* Resource */,
+			);
+			path = JAFWeakTimerDemo;
+			sourceTree = "<group>";
+		};
+		D9F2883F228D46E20022554B /* JAFWeakTimerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9F28840228D46E20022554B /* JAFWeakTimerDemoTests.m */,
+				D9F28842228D46E20022554B /* Info.plist */,
+			);
+			path = JAFWeakTimerDemoTests;
+			sourceTree = "<group>";
+		};
+		D9F2884B228D470B0022554B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D9F28830228D46E20022554B /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D9F2884C228D47130022554B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2882D228D46E10022554B /* Main.storyboard */,
+				D9F28832228D46E20022554B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D9F2884D228D47290022554B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D9F28836228D46E20022554B /* main.m */,
+				D9F28827228D46E10022554B /* AppDelegate.h */,
+				D9F28828228D46E10022554B /* AppDelegate.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D9F2884E228D47710022554B /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2884F228D47A80022554B /* JAFFirstController.h */,
+				D9F28850228D47A80022554B /* JAFFirstController.m */,
+				D9F28852228D47B50022554B /* JAFSecondController.h */,
+				D9F28853228D47B50022554B /* JAFSecondController.m */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		D9F28855228D489F0022554B /* JAFWeakTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D9F28857228D48AC0022554B /* JAFWeakTimer.h */,
+				D9F28856228D48AC0022554B /* JAFWeakTimer.m */,
+			);
+			path = JAFWeakTimer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9F28823228D46E10022554B /* JAFWeakTimerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F28845228D46E20022554B /* Build configuration list for PBXNativeTarget "JAFWeakTimerDemo" */;
+			buildPhases = (
+				D9F28820228D46E10022554B /* Sources */,
+				D9F28821228D46E10022554B /* Frameworks */,
+				D9F28822228D46E10022554B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JAFWeakTimerDemo;
+			productName = JAFWeakTimerDemo;
+			productReference = D9F28824228D46E10022554B /* JAFWeakTimerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9F2883B228D46E20022554B /* JAFWeakTimerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F28848228D46E20022554B /* Build configuration list for PBXNativeTarget "JAFWeakTimerDemoTests" */;
+			buildPhases = (
+				D9F28838228D46E20022554B /* Sources */,
+				D9F28839228D46E20022554B /* Frameworks */,
+				D9F2883A228D46E20022554B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F2883E228D46E20022554B /* PBXTargetDependency */,
+			);
+			name = JAFWeakTimerDemoTests;
+			productName = JAFWeakTimerDemoTests;
+			productReference = D9F2883C228D46E20022554B /* JAFWeakTimerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9F2881C228D46E10022554B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Jamfer.iOSCoder;
+				TargetAttributes = {
+					D9F28823228D46E10022554B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D9F2883B228D46E20022554B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D9F28823228D46E10022554B;
+					};
+				};
+			};
+			buildConfigurationList = D9F2881F228D46E10022554B /* Build configuration list for PBXProject "JAFWeakTimerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9F2881B228D46E10022554B;
+			productRefGroup = D9F28825228D46E10022554B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9F28823228D46E10022554B /* JAFWeakTimerDemo */,
+				D9F2883B228D46E20022554B /* JAFWeakTimerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9F28822228D46E10022554B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F28834228D46E20022554B /* LaunchScreen.storyboard in Resources */,
+				D9F2885A228D49CE0022554B /* Default-568h@2x.png in Resources */,
+				D9F28831228D46E20022554B /* Assets.xcassets in Resources */,
+				D9F2882F228D46E10022554B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F2883A228D46E20022554B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9F28820228D46E10022554B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F28851228D47A80022554B /* JAFFirstController.m in Sources */,
+				D9F28854228D47B50022554B /* JAFSecondController.m in Sources */,
+				D9F28858228D48AC0022554B /* JAFWeakTimer.m in Sources */,
+				D9F28837228D46E20022554B /* main.m in Sources */,
+				D9F28829228D46E10022554B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F28838228D46E20022554B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F28841228D46E20022554B /* JAFWeakTimerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9F2883E228D46E20022554B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9F28823228D46E10022554B /* JAFWeakTimerDemo */;
+			targetProxy = D9F2883D228D46E20022554B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9F2882D228D46E10022554B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9F2882E228D46E10022554B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9F28832228D46E20022554B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9F28833228D46E20022554B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9F28843228D46E20022554B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9F28844228D46E20022554B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9F28846228D46E20022554B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JAFWeakTimerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSCorder.Jamfer.JAFWeakTimerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9F28847228D46E20022554B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JAFWeakTimerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSCorder.Jamfer.JAFWeakTimerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9F28849228D46E20022554B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JAFWeakTimerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSCorder.Jamfer.JAFWeakTimerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JAFWeakTimerDemo.app/JAFWeakTimerDemo";
+			};
+			name = Debug;
+		};
+		D9F2884A228D46E20022554B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JAFWeakTimerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSCorder.Jamfer.JAFWeakTimerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JAFWeakTimerDemo.app/JAFWeakTimerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9F2881F228D46E10022554B /* Build configuration list for PBXProject "JAFWeakTimerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F28843228D46E20022554B /* Debug */,
+				D9F28844228D46E20022554B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F28845228D46E20022554B /* Build configuration list for PBXNativeTarget "JAFWeakTimerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F28846228D46E20022554B /* Debug */,
+				D9F28847228D46E20022554B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F28848228D46E20022554B /* Build configuration list for PBXNativeTarget "JAFWeakTimerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F28849228D46E20022554B /* Debug */,
+				D9F2884A228D46E20022554B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9F2881C228D46E10022554B /* Project object */;
+}
